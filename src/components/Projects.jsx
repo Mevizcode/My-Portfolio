@@ -1,28 +1,33 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
-import employeeMSImage from "../assets/employee-ms.png";
-import bookMSImage from "../assets/admin-dashboard.png";
+import dcrAgency from "../assets/dcr-agency.png";
+import tdxGlobal from "../assets/tdx-global.png";
+import cripexLibrary from "../assets/cripex-library.png";
 
 const projects = [
   {
     id: 1,
-    name: "Employee MS",
-    technologies: "MERN Stack",
-    image: employeeMSImage,
-    github: "https://github.com/YouafKhan1",
+    name: "TDX Global",
+    technologies: "ASP .NET Project & JavaScript",
+    image: tdxGlobal,
+    github: "https://www.tdx-global.com",
+    website: "https://www.tdx-global.com",
   },
   {
     id: 2,
-    name: "Blog App",
-    technologies: "MERN Stack",
-    image: bookMSImage,
-    github: "https://github.com/YouafKhan1",
+    name: "Cripex Library",
+    technologies: "ASP .NET Project & JavaScript",
+    image: cripexLibrary,
+    github: "https://github.com/Mevizcode/Cripex-Library-Management",
+    website: "",
   },
   {
     id: 3,
-    name: "Book MS",
-    technologies: "MERN Stack",
-    image: employeeMSImage,
-    github: "https://github.com/YouafKhan1",
+    name: "DCR Application Portal",
+    technologies: "ReactJS + ASP .NET",
+    image: dcrAgency,
+    github: "#",
+    website: "",
   },
 ];
 
@@ -39,9 +44,14 @@ const Projects = () => {
               w-full h-48 object-cover" />
               <h3 className="text-2xl font-bold mb-2">{project.name}</h3>
               <p className="text-gray-400 mb-4">{project.technologies}</p>
-              <a href={project.github} className="inline-block bg-gradient-to-r 
-              from-green-400 to-blue-500 text-white px-4 py-2 rounded-full" target="_blank" 
-              rel="noopener noreferrer">GitHub</a>
+              <a
+                href={project.website ? project.website : project.github}
+                className="inline-block bg-gradient-to-r from-green-400 to-blue-500 text-white px-4 py-2 rounded-full"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {project.website ? "Website" : "GitHub"}
+              </a>
             </div>
           ))}
         </div>

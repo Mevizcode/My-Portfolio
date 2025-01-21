@@ -1,35 +1,31 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 
 const services = [
   {
     id: 1,
-    title: "Web Design",
-    description: "Creating visually appealing and user-friendly web designs.",
+    title: "Backend Development",
+    description: "Developed robust backend systems using ASP.NET Core, NodeJS, Spring Boot, and Python for scalable, high-performance applications.",
   },
   {
     id: 2,
     title: "Frontend Development",
-    description: "Building responsive and interactive user interfaces.",
+    description: "Built dynamic, responsive user interfaces using React.js, Next.js, and Tailwind CSS, ensuring an optimal user experience across devices.",
   },
   {
     id: 3,
-    title: "Backend Development",
-    description: "Developing robust server-side logic and databases.",
-  },
-  {
-    id: 4,
     title: "Full-Stack Development",
-    description: "Combining both frontend and backend development skills.",
-  },
-  {
-    id: 5,
-    title: "Content Writing",
-    description: "Writing content for your business and companies.",
+    description: "Implemented full-stack solutions using technologies like Next.js, React.js, and RESTful APIs, delivering seamless user experiences.",
   },
   {
     id: 6,
-    title: "Digital Marketing",
-    description: "Promote your business with our digital marketing team.",
+    title: "Database Management",
+    description: "Managed databases such as MySQL, MS SQL Server, and MongoDB, ensuring data integrity, security, and high availability.",
+  },
+  {
+    id: 7,
+    title: "Cloud & Server Management",
+    description: "Deployed and maintained web applications on cloud platforms, focusing on performance optimization, scalability, and uptime.",
   },
 ];
 const Service = () => {
@@ -48,7 +44,7 @@ const Service = () => {
                 className="text-right text-2xl font-bold text-transparent bg-clip-text 
               bg-gradient-to-r from-green-600 to-blue-400"
               >
-                {service.id}
+                {/* {service.id} */}
               </div>
               <h3 className="mt-2 text-2xl font-bold text-transparent bg-clip-text 
               bg-gradient-to-r from-green-400 to-blue-500">
