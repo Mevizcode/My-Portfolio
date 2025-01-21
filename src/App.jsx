@@ -8,17 +8,17 @@ import Navbar from './components/Navbar'
 import Projects from './components/Projects'
 import Service from './components/Service'
 
-function App() {
+const App = () => {
 
   return (
     <div>
-        <Navbar />
-        <Hero />
-        <About />
-        <Service />
-        <Projects />
-        <Contact />
-        <Footer />
+      <Navbar />
+      <Hero />
+      <About />
+      <Service />
+      <Projects />
+      <Contact />
+      <Footer />
     </div>
   )
 }
